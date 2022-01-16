@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 /* Color Palatte: https://colorswall.com/palette/36406/ */
 
 html, body , .container {
-  /* height: 100%; */
   margin: 0;
-  font-family: 'Domine', serif;
+  font-family: 'Crete Round', serif;
 }
 
 #header-div {
@@ -47,31 +47,58 @@ html, body , .container {
   font-size: 18px;
   font-style: italic;
   font-weight: 200;
-  color: #e0cca8;
+  color: #b81237;
 }
 
 #main {
-  background-color: #f6f0e6;
-  padding: 5px 0 5px 0;
-}
-
-/* #main-title {
-   margin: 0;  WORK ON GETTING SPACING BETWEEN TOP AND BOTTOM OF MAIN EVEN 
-} */
-
-#footer {
-  background-color: #e0cca8;
+  background-color: #fcf1e4;
   padding: 5px 0 5px 0;
   text-align: center;
+}
+
+#main-content {
+  max-width: 700px;
+  margin: 75px auto 75px;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#main-title {
+   font-size: 35px;
+   color: #351d04;
+   font-weight: 700;
+}
+
+#main-paragraph {
+  font-family: 'Josefin Slab', serif;
+  color: #97540b;
+  line-height: 2;
+  font-weight: 700;
+}
+
+ #footer {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  /* may remove above */
+  background-color: #fbe5cd;
+  padding: 20px 0 20px 0;
+  text-align: center;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
+  color: #351d04;
+}
+
+#to-be-changed {
+  background-color: #fcf1e4; 
+  padding: 5px 0 5px 0;
+  height: 100vh;
 }
 
 .link {
-  color: red;
+  color: #b81237;
 }
 
 .link:hover {
-  color: darkred;
+  color: #910e2a;	
   text-decoration: none;
 }
