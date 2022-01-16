@@ -1,16 +1,77 @@
-.container {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 0.9fr .1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+/* Color Palatte: https://colorswall.com/palette/36406/ */
 
 html, body , .container {
-  height: 100%;
+  /* height: 100%; */
   margin: 0;
+  font-family: 'Domine', serif;
+}
+
+#header-div {
+  width: 100%;
+  display: block;
+}
+
+#header-img {
+  width: 100%;
+  display: block;
+}
+
+#header {
+  position: relative;
+}
+
+#header-title {
+  position: absolute;
+  top: 50%;
+  right: 55px;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+#header-text, #header-short {
+  color: #f6f0e6;
+  margin: 0;
+}
+
+#header-text {
+  font-family: 'Rye', cursive;
+  font-size: 58px;
+  font-weight: 200;
+  padding: 0 0 5px;
+}
+
+#header-short {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 200;
+  color: #e0cca8;
+}
+
+#main {
+  background-color: #f6f0e6;
+  padding: 5px 0 5px 0;
+}
+
+/* #main-title {
+   margin: 0;  WORK ON GETTING SPACING BETWEEN TOP AND BOTTOM OF MAIN EVEN 
+} */
+
+#footer {
+  background-color: #e0cca8;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.link {
+  color: red;
+}
+
+.link:hover {
+  color: darkred;
+  text-decoration: none;
 }
