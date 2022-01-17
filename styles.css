@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 /* Color Palatte: https://colorswall.com/palette/36406/ */
 
 html, body , .container {
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
   margin: 0;
-  font-family: 'Crete Round', serif;
 }
 
-#header-div {
-  width: 100%;
-  display: block;
-}
-
-#header-img {
+#header-div, #header-img {
   width: 100%;
   display: block;
 }
@@ -29,25 +24,24 @@ html, body , .container {
   right: 55px;
   margin: auto;
   transform: translateY(-50%);
+  text-align: center;
 }
 
 #header-text, #header-short {
-  color: #f6f0e6;
   margin: 0;
 }
 
 #header-text {
-  font-family: 'Rye', cursive;
-  font-size: 58px;
-  font-weight: 200;
+  font-size: 70px;
+  font-weight: 700;
   padding: 0 0 5px;
+  color: #f6f0e6;
 }
 
 #header-short {
   font-size: 18px;
   font-style: italic;
-  font-weight: 200;
-  color: #b81237;
+  color: #efb802;
 }
 
 #main {
@@ -58,40 +52,73 @@ html, body , .container {
 
 #main-content {
   max-width: 700px;
-  margin: 75px auto 75px;
+  margin: 60px auto 60px;
   text-align: left;
-  font-size: 20px; 
+  font-size: 20px;
+  line-height: 2;
+  color: #97540b;
 }
 
-#main-title {
+#main-img {
+  max-width: 700px;
+  width: 700px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.main-title {
    font-size: 35px;
    color: #351d04;
    font-weight: 700;
+   margin: 0;
+}
+
+#timeline-title {
+  margin: 20px 0;
+}
+
+#info-list {
+  font-family: 'Merriweather', serif;
 }
 
 #main-paragraph {
-  font-family: 'Josefin Slab', serif;
-  color: #97540b;
-  line-height: 2;
+  font-family: 'Merriweather', serif;
+}
+
+strong {
+  color: #351d04;
+}
+
+#album-title {
+  font-size: 35px;
+  color: #351d04;
   font-weight: 700;
+  margin: 0 0 20px;
+}
+
+#album-covers {
+  display: flex;
+  justify-content: center;
+}
+
+#album-covers > a > img {
+  border-radius: 7px;
+  width: 250px;
+  height: 250px;
+  margin: 0 10px 0 10px;
 }
 
  #footer {
-  font-family: 'Josefin Slab', serif;
-  font-weight: 700;
-  /* may remove above */
+  font-family: 'Merriweather', serif;
   background-color: #fbe5cd;
   padding: 20px 0 20px 0;
   text-align: center;
   font-size: 18px;
   line-height: 2;
-  color: #351d04;
-}
-
-#to-be-changed {
-  background-color: #fcf1e4; 
-  padding: 5px 0 5px 0;
-  height: 100vh;
+  color: #97540b;
 }
 
 .link {
@@ -99,6 +126,6 @@ html, body , .container {
 }
 
 .link:hover {
-  color: #910e2a;	
+  color: #efb802;
   text-decoration: none;
 }
