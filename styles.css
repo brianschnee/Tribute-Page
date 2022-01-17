@@ -9,16 +9,28 @@ html, body , .container {
   margin: 0;
 }
 
-#header-div, #header-img {
-  width: 100%;
+#img-div, #image {
+  background-color: black; /* may delete, this is for when making the page more responsive (when the image shrinks, the background color will show behind the header image*/
   display: block;
+  width: 100%;
+}
+
+#img-caption {
+  background-color: #fbe5cd;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0 5px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100px;
+  color: #351d0480;
 }
 
 #header {
   position: relative;
 }
 
-#header-title {
+#header-text {
   position: absolute;
   top: 50%;
   right: 55px;
@@ -27,18 +39,18 @@ html, body , .container {
   text-align: center;
 }
 
-#header-text, #header-short {
+#title, #short {
   margin: 0;
 }
 
-#header-text {
+#title {
   font-size: 70px;
   font-weight: 700;
   padding: 0 0 5px;
   color: #f6f0e6;
 }
 
-#header-short {
+#short {
   font-size: 18px;
   font-style: italic;
   color: #efb802;
@@ -97,6 +109,10 @@ strong {
   color: #351d04;
   font-weight: 700;
   margin: 0 0 20px;
+}
+
+#albums > em {
+  font-size: 10px;
 }
 
 #album-covers {
