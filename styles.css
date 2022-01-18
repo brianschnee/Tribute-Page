@@ -155,4 +155,10 @@ strong {
   text-decoration: none;
 }
 
+#album-covers > a > img:hover, img:focus {
+  opacity: 75%;
+  box-shadow: 3px 3px;
+  color: #b81237;
+}
+
 /* testing commits after changing my global config to my proper email */
